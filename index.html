@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.2.1.js" ></script>
+    <title>我的播放器</title>
+</head>
+<body>
+<div class="container">
+    <video preload="metadata">
+        <source src="http://www.1ting.com/mv/video/vhd/816135.flv" type="video/mp4"/>
+        抱歉，您的浏览器不支持video标签！
+    </video>
+    <div class="header">VisaW的自主播放器</div>
+    <div class="footer">
+        <div class="top">
+            <div class="time-line">
+                <div class="time-bar"></div>
+            </div>
+            <div class="time-font">
+                <span class="cur-time">00:00</span><span>/</span><span class="duration">00:00</span>
+            </div>
+        </div>
+        <div class="clear-box"></div>
+        <div class="bottom">
+            <div class="icon-play start"></div>
+            <div class="icon-stop"></div>
+            <div class="speed">
+                <span class="selected">X1</span>
+                <span>X2</span>
+                <span>X3</span>
+            </div>
+            <div class="vol-field">
+                <div class="icon-vol sound"></div>
+                <div class="vol-line">
+                    <div class="vol-bar"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="loading"></div>
+</div>
+<!--<div>-->
+    <!--<input name="changeSkin" type="color"/>-->
+<!--</div>-->
+<script src="index.js"></script>
+</body>
+</html>

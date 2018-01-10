@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+body {
+    font-family: "宋体","Avenir", arial, sans-serif;
+    font-size: 10px;
+    color: #28b294;
+}
+
+.clear-box {
+    clear: both;
+}
+
+.container {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 600px;
+    height: 340px;
+    overflow: hidden;
+}
+
+video {
+    width: 600px;
+    height: 340px;
+    z-index: 1;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    z-index: 2;
+    background-color: #b8f1cc;
+    text-align: center;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 44px;
+    z-index: 2;
+    background-color: #b8f1cc;
+}
+
+.footer .top {
+    padding: 0 5px;
+}
+
+.footer .top .time-line {
+    float: left;
+    width: 85%;
+    margin:2px 0;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #ccc;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.footer .top .time-line .time-bar {
+    width: 0;
+    height: 100%;
+    border-radius: 5px;
+    background-color: #28b294;
+    cursor: pointer;
+}
+
+.footer .top .time-font {
+    float: right;
+    width: 15%;
+    height: 20px;
+    text-align: right;
+}
+
+.footer .top .time-font span {
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+}
+
+.footer .bottom {
+    padding: 0 5px;
+}
+
+.footer .bottom .icon-play {
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.footer .bottom .start {
+    background: url(images/start.png) no-repeat;
+    background-size: 100%;
+}
+
+.footer .bottom .play {
+    background: url(images/pause.png) no-repeat;
+    background-size: 100%;
+}
+
+.footer .bottom .icon-stop {
+    float: left;
+    width: 20px;
+    height: 20px;
+    background: url(images/stop.png) no-repeat;
+    background-size: 100%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.footer .bottom .speed {
+    float: left;
+    margin: 2px 0;
+}
+
+.footer .bottom .speed span {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.footer .bottom .speed span.selected {
+    background-color: #28b294;
+    color: #b8f1cc;
+}
+
+.footer .bottom .vol-field {
+    float: right;
+    width: 130px;
+}
+
+.footer .bottom .vol-field .icon-vol {
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.footer .bottom .vol-field .sound {
+    background: url(images/sound.png) no-repeat;
+    background-size: 100%;
+}
+
+.footer .bottom .vol-field .silent {
+    background: url(images/silent.png) no-repeat;
+    background-size: 100%;
+}
+
+.footer .bottom .vol-field .vol-line {
+    float: right;
+    width: 100px;
+    margin:5px 0;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #ccc;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.footer .bottom .vol-field .vol-line .vol-bar {
+    width: 50%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: #28b294;
+}
+
+.loading {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background: url(images/loading.gif) center center;
+    background-size: 100%;
+    z-index: 99;
+}
